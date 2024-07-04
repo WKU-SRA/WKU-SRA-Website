@@ -19,7 +19,6 @@ export default function Intro() {
           ease: [0.4, 0.0, 0.2, 1],
         }}
         className=" px-4 md:text-5xl lg:text-3xl font-bold text-neutral-200 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto" >
-"
       欢迎加入温州肯恩大学科学研究协会（WKU-SRA），一个充满激情和创新的学术社区！
       在这里，{" "}<Highlight className="text-black dark:text-white">
         我们致力于推动科学研究的发展，鼓励跨学科合作，培养下一代科研人才。
