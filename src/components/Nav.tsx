@@ -37,6 +37,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationBar() {
   return (
+    <div className="flex w-full justify-center">
     <NavigationMenu >
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -105,6 +106,7 @@ export function NavigationBar() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
+    </div>
   )
 }
 

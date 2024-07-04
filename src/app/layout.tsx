@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        <header>
+        <header >
           <HeaderLogo/>
           <NavigationBar />
         </header>
