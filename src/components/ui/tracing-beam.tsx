@@ -27,7 +27,6 @@ export const TracingBeam = ({
 
   useEffect(() => {
     if (contentRef.current) {
-      alert(contentRef.current.clientHeight);
       setSvgHeight(contentRef.current.clientHeight);
       return()=> setSvgHeight(0);
       
