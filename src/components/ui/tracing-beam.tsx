@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import useDynamicHeight from "@/hooks/useHeightListner";
+
 import {
   motion,
   useTransform,
@@ -17,6 +19,8 @@ export const TracingBeam = ({
   className?: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
+  const height = useDynamicHeight(ref);
+  
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -27,9 +31,12 @@ export const TracingBeam = ({
 
   useEffect(() => {
     if (contentRef.current) {
-      setSvgHeight(contentRef.current.offsetHeight );
+      console.log(height)
+      setSvgHeight(height);
+      return()=> setSvgHeight(0);
+      
     }
-  }, []);
+  }, [height]);
 
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
