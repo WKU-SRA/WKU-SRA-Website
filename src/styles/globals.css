@@ -75,3 +75,12 @@
     }
   }
 
+  @layer components {
+    
+    /*
+     * used for adding some spaces for text description in @/components/ui/text-reveal-card
+     */
+    .textDiv p {
+      @apply px-4 py-2 rounded-md;
+    }
+  }

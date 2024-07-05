@@ -31,6 +31,10 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        'xsm': '510px',
+        'xxsm': '400px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

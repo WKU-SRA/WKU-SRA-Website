@@ -19,26 +19,26 @@ const components: { title: string; href: string; description: string }[] = [
     title: "关于我们",
     href: "/aboutus",
     description:
-      "协会介绍",
+      "科协介绍",
   },
   {
     title: "组织架构",
-    href: "/aboutus/architecture",
+    href: "/aboutus/organization-structure",
     description:
-      "协会组织架构",
+      "科协组织架构",
   },
   {
     title: "开展活动",
     href: "/aboutus/activities",
     description:
-      "科协举办承办的所有活动.",
+      "科协举办承办活动",
   },
 ]
 
 export function NavigationBar() {
   return (
-    <div className="flex w-full justify-center">
-    <NavigationMenu >
+    <div className="flex  w-full justify-center">
+    <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>所属机构</NavigationMenuTrigger>
@@ -64,12 +64,9 @@ export function NavigationBar() {
               <ListItem href="https://www.wku.edu.cn/zh-hans/jgsz/orsp" title="温肯科研办">
               为来自全球范围的卓越学术和科研力量提供更专业的服务，努力探索更高效的科研合作机制，为温州肯恩大学成为地区问题解决方案的领跑者做出贡献。
               </ListItem>
-              <ListItem href="/docs/installation" title="温州肯恩大学学生组织">
-                这是一段介绍，我没有找到咱们隶属的学生组织链接   
+              <ListItem href="https://www.wku.edu.cn/zh-hans/jgsz/xssw/clubs-and-organizations" title="温州肯恩大学学生组织">
+              学生社团和组织是校园生活的重要组成部分
               </ListItem>
-              <p>
-                对了，这个链接，你们可以看一下需要改一下吗，鼠标移过去会打开，但是点击的话会跳转到对应页面，好像容易误操作
-              </p>
              
             </ul>
           </NavigationMenuContent>
