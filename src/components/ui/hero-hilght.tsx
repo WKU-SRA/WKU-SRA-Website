@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
-import React from "react";
+import React, { Children } from "react";
 
 export const HeroHighlight = ({
   children,
@@ -63,9 +63,13 @@ export const HeroHighlight = ({
 export const Highlight = ({
   children,
   className,
+  duration = 2,
+  delay = 0.5,
 }: {
   children: React.ReactNode;
   className?: string;
+  duration?: number;
+  delay?: number;
 }) => {
   return (
     <motion.span
@@ -76,9 +80,9 @@ export const Highlight = ({
         backgroundSize: "100% 100%",
       }}
       transition={{
-        duration: 2,
+        duration ,
         ease: "linear",
-        delay: 0.5,
+        delay,
       }}
       style={{
         backgroundRepeat: "no-repeat",

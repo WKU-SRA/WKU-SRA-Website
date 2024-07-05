@@ -11,8 +11,6 @@ export default function Home() {
         科技·创新·未来 <br/>
         Science·Innovation
         </h1>
-        <p></p>
-        
         <Intro />
       </div>
       <BackgroundBeams />
